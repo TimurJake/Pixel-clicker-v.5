@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #141414;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    cursor: pointer;
+}
+
+.main {
+    width: 500px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    width: 100%;
+    gap: 10px;
+    margin-top: 1rem;
+}
+
+.imgclick {
+    width: 250px;
+    height: 250px;
+    transition: all 0.1s ease;
+    cursor: pointer;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    z-index: 1;
+}
+
+.imgblur {
+    position: absolute;
+    top: 210px;
+    filter: blur(15px);
+    width: 260px;
+    height: 260px;
+}
+
+#idcount, #idcountshop {
+    color: #fff;
+    font-size: 50px;
+    height: auto;
+}
+
+.countcoin, .countcoinshop {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    line-height: 1;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+.countcoinshop {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.energyblock {
+    color: #38bdf8;
+    font-weight: 400;
+    font-size: 1.3rem;
+    display: flex;
+    gap: 5px;
+}
+
+.imgclick:active {
+    scale: 105%;
+}
+
+.xxx {
+    display: flex;
+    width: 100%;
+    max-width: 425px;
+    height: 100%;
+    max-height: 800px;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: 2;
+    align-items: center;
+}
+
+.x-button {
+    color: #fff;
+    width: 48%;
+    height: 80px;
+    padding: 10px 2px 10px;
+    border: none;
+    background-color: #191919;
+    font-size: 1.2rem;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 420px) {
+    .x-button {
+        font-size: 1rem;
+    }
+}
+
+.x-button:hover {
+    scale: 105%;
+}
+
+.x-button:active {
+    scale: 100%;
+}
+
+.pageshop {
+    border: 4px solid #222222;
+    border-radius: 20px;
+    position: relative;
+    bottom: 430px;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    z-index: 3;
+    padding: 10px;
+}
+
+.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.buttonshopshow {
+    background-color: #141414;
+    color: #fff;
+}
+
+.stat-button {
+    display: flex;
+    color: #fff;
+    width: 100%;
+    padding: 5px 2px 5px;
+    border: none;
+    background-color: #191919;
+    font-size: 20px;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.xtext {
+    background-color: #191919;
+    font-size: 1rem;
+    height: 20px;
+    color: #f97316;
+}
+
+.coin {
+    width: 20px;
+    height: 20px;
+}
+
+.upxcoin {
+    display: flex;
+    align-items: center;
+    background-color: #191919;
+    height: 20px;
+    gap: 5px;
+}
+
+.dtext {
+    background-color: #191919;
+    font-size: 1rem;
+    height: 20px;
+    color: #22c55e;
+}
+
+.bigcoin {
+    width: 50px;
+    height: 50px;
+}
+
+.nickname {
+    width: 200px;
+    height: 30px;
+    color: #fff;
+    border: none;
+    background-color: #191919;
+    border-radius: 5px;
+}
+
+#inputform {
+    position: fixed;
+    bottom: 0;
+    height: 35px;
+    margin-bottom: 110px;
+}
+
+@media screen and (max-height: 700px) {
+    .imgclick {
+        width: 200px;
+        height: 200px;
+    }
+    .imgblur {
+        width: 210px;
+        height: 210px;
+    }
+}
+
+#submit {
+    cursor: pointer;
+    width: 100px;
+    height: 32px;
+    transition: all 0.2s ease;
+}
+
+#submit:hover {
+    background-color: #222222;
+}
+
+.nav {
+    display: flex;
+    width: 486px;
+    height: 90px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #191919;
+    margin-bottom: 10px;
+    border: 2px solid #191919;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 0 5px 0 ;
+    position: fixed;
+    bottom: 0;
+}
+
+.nav-item {
+    background-color: #191919;
+    color: gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 24px 0;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+    height: 90%;
+    border: none;
+}
+
+.nav-item p, .nav-item i {
+    background-color: #191919;
+    height: auto;
+    width: auto;
+    transition: all 0.2s ease;
+}
+
+#nav-item3,  #nav-item3 i, #nav-item3 p {
+    background-color: #141414;
+    color: #Fff;
+}
+
+.nav-item:hover {
+    background-color: #141414;
+    color: #fff; 
+}
+
+.nav-item:hover p {
+    background-color: #141414;
+    color: #fff; 
+}
+
+.nav-item:hover i {
+    background-color: #141414;
+    color: #fff; 
+}
+
+.nav-item i {
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 500px) {
+    .nav {
+        width: 400px;
+    }
+    .nav-item {
+        padding: 0 15px 0;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .nav {
+        width: 350px;
+    }
+    .nav-item {
+        padding: 0 10px 0;
+    }
+    .nav-item i {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .nav {
+        width: 300px;
+    }
+    .nav-item {
+        padding: 0 5px 0;
+    }
+    .nav-item i {
+        font-size: 1rem;
+    }
+}
+

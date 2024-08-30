@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pixel Kombat | by Jk</title>
+        <link rel="shortcut icon" href="img/coin-CiY8Ad4k.png" type="image/x-icon">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+    </head>
+    <body>
+        <div class="main wrappershop">
+            <div class="stats">
+                <div class="stat-button">
+                    <p class="xtext">Множитель:</p>
+                    <div class="upxcoin">
+                        <img src="img/coin-CiY8Ad4k.png" class="coin">
+                        <p id="idupx">1x</p>
+                    </div>
+                </div>
+                <div class="stat-button">
+                    <p class="dtext">Доход в секунду:</p>
+                    <div class="upxcoin">
+                        <img src="img/coin-CiY8Ad4k.png" class="coin">
+                        <p id="idinc">0</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="countcoin">
+                <img src="img/coin-CiY8Ad4k.png" class="bigcoin">
+                <h2 id="idcount">0</h2>
+            </div>
+            
+            <img id="imgblur" src="https://mc-heads.net/avatar/Steve2/512" draggable="false" style=" -moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;" class="imgblur">
+            <img id="imgclickid" class="imgclick" onclick="onClickButton()" draggable="false" src="https://mc-heads.net/avatar/Steve2/512" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;">
+            <div class="energyblock">
+                <i class="ri-flashlight-line"></i>
+                <p id="energy">100</p> / <p id="energyMax">100</p> | <p id="energyinc">+5</p>
+                <i class="ri-flashlight-line"></i>
+            </div>
+
+            <form id="inputform" onsubmit="return checkform(this)" method="post">
+                <input type="text" class="nickname" name="idnick" placeholder=" Введите Ник В Майнкрафте" id="idnick" autocomplete="off">
+                <input type="submit" class="nickname" name="submit" value="Готово" id="submit">
+            </form>
+            
+            <div class="pageshop hintshop">
+                <div class="xxx">
+                    <button id="upgr" class="x-button" onclick="upgrade(this)">Улучшить множитель за 50</button>
+                    <button id="uprab" class="x-button" onclick="upgradeRab(this)">Купить рабочего за 100</button>
+                    <button class="x-button" style="color: gray;">Скоро...</button>
+                    <button class="x-button" style="color: gray;">Скоро...</button>
+                    <button class="x-button" style="color: gray;">Скоро...</button>
+                    <button class="x-button" style="color: gray;">Скоро...</button>
+                </div>
+            </div>
+            
+            <div class="nav">
+                <button class="nav-item"><i class="ri-loader-fill"></i><p>Скоро..</p></button>
+                <button class="nav-item buttonshop"><i class="ri-shopping-cart-line"></i><p>Магазин</p></button>
+                <button class="nav-item" id="nav-item3"><i class="ri-home-2-line"></i><p>Добыча</p></button>
+                <button class="nav-item"><i class="ri-loader-fill"></i><p>Скоро..</p></button>
+                <button class="nav-item"><i class="ri-loader-fill"></i><p>Скоро..</p></button>
+            </div>
+
+        </div>
+
+        <script src="index.js"></script>
+    </body>
+</html>
